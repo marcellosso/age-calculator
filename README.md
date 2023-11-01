@@ -16,7 +16,13 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](./images/qrcode-challenge.png)
+### Desktop
+
+<img src="./images/age-calculator-desktop.png" alt="Age Calculator Desktop" style="width:500px;"/>
+
+### Mobile
+
+<img src="./images/age-calculator-mobile.png" alt="Age Calculator Mobile" style="width:200px;"/>
 
 ### Links
 

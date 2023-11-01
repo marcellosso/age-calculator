@@ -136,8 +136,8 @@ const Home = () => {
 
   return (
     <main className="bg-neutralOffWhite flex h-screen w-screen items-center justify-center">
-      <div className="flex flex-col gap-4 bg-white rounded-2xl rounded-br-[10rem] desktop:rounded-br-[15rem] w-full desktop:w-2/5 h-3/5 p-6 desktop:p-12 shadow-md">
-        <div className="flex gap-6 desktop:gap-8 desktop:w-2/3 w-full">
+      <div className="flex flex-col gap-4 bg-white rounded-2xl rounded-br-[10rem] w-full desktop:w-2/5 h-3/5 desktop:h-4/6 p-6 desktop:p-12 ">
+        <div className="flex gap-6 desktop:gap-6 desktop:w-3/4 w-full">
           <NumberInput
             value={date.day}
             setValue={(val) => setDate({ ...date, day: val })}

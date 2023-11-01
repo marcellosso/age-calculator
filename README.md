@@ -27,7 +27,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [QR Code Challenge Solution](https://github.com/marcellosso/challenges-frontendmentor/tree/main/age-calculator)
-- Live Site URL: [Live - QR Code](https://marcellosso.github.io/challenges-frontendmentor/qr-code/)
+- Live Site URL: [Live - QR Code](https://age-calculator-chi-amber.vercel.app/)
 
 ## Author
 

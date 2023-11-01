@@ -31,7 +31,7 @@ const NumberInput: FC<NumberInputProps> = ({
   hasError,
 }) => {
   return (
-    <div className="flex flex-col w-full gap-2 text-neutralSmokeyGrey">
+    <div className="flex flex-col w-full gap-2 text-neutralSmokeyGrey relative">
       <label
         className={`${
           hasError ? "text-primaryLightRed" : "text-smokeGrey"
@@ -50,7 +50,9 @@ const NumberInput: FC<NumberInputProps> = ({
         required
       />
       {errorMessage && (
-        <p className="italic text-primaryLightRed text-xs">{errorMessage}</p>
+        <p className="absolute -bottom-5 italic text-primaryLightRed text-[10px] sm:text-xs">
+          {errorMessage}
+        </p>
       )}
     </div>
   );
@@ -165,8 +167,9 @@ const Home = () => {
         </div>
         <div className="flex items-center justify-center w-full ">
           <div className="h-px w-full bg-neutralLightGrey" />
-          <button
-            className="flex items-center justify-center bg-primaryPurple hover:bg-neutralOffBlack w-52 desktop:w-24 h-20 rounded-full duration-200 transition-colors"
+          <div
+            tabIndex={1}
+            className="cursor-pointer flex items-center justify-center bg-primaryPurple hover:bg-neutralOffBlack w-52 desktop:w-24 h-20 rounded-full duration-200 transition-colors"
             onClick={calculateAge}
           >
             <svg
@@ -179,7 +182,7 @@ const Home = () => {
                 <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
               </g>
             </svg>
-          </button>
+          </div>
           <div className="block desktop:hidden h-px w-full bg-neutralLightGrey" />
         </div>
 
